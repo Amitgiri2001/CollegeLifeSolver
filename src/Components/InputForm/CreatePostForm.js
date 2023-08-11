@@ -28,6 +28,8 @@ function CreatePostForm(props) {
       content: content,
       image: image
     }
+    console.log("On create Form Props", props);
+    console.log("On create Form", obj);
     props.onAddPost(obj);
 
     // Reset the form fields after submission
@@ -65,6 +67,8 @@ function CreatePostForm(props) {
         </div>
         <button type="submit">Submit</button>
       </form>
+
+      <a href="/">Home</a>
     </div>
   );
 }

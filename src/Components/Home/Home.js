@@ -13,6 +13,8 @@ const Home = (props) => {
                     {post.image && <img src={post.image} alt={`Image for ${post.title}`} style={{ maxWidth: '100%', height: 'auto' }} />}
                 </div>
             ))}
+
+            <a href="/create-post">New Post</a>
         </div>
     );
 };
